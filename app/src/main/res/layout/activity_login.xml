@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/designhomepage"
+        android:orientation="vertical"
+
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="30bg gang"
+            android:textSize="60sp"
+
+
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="20dp"
+            android:id="@+id/emails"
+
+            android:background="@drawable/designlogin"
+            android:textColorHint="@color/blue"
+            android:textColor="@color/blue"
+
+            android:focusable="true"
+            android:hint="Email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:id="@+id/passwords"
+
+            android:background="@drawable/designlogin"
+
+            android:textColorHint="@color/blue"
+
+            android:textColor="@color/blue"
+
+            android:hint="Password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+
+
+
+
+
+
+            android:text="Forgotten Password?"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+
+            android:background="@drawable/designlogin"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/btnLogin"
+
+
+            android:hint="Login"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+
+
+
+
+
+
+            android:text="New to 30bg?"/>
+
+            <TextView
+                android:id="@+id/signups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Sign Up"
+
+
+
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/progressbar"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+</LinearLayout>

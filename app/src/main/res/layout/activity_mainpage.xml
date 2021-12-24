@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/designhomepage"
+
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cart"
+
+            android:src="@drawable/realshoppingcart" />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnLogin"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+
+
+            android:src="@drawable/human"
+            app:civ_border_color="#5A5959"
+
+            android:layout_marginLeft="35dp"
+            app:civ_circle_background_color="#818080"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="150pt"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="75dp"
+
+
+            android:background="@drawable/designsearch"
+            android:focusable="true"
+            android:inputType="text"
+            app:queryHint="Search for cars" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="180dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="Choose a car"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="23sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleview"
+
+        tools:listitem="@layout/list_item"/>
+</LinearLayout>
+</RelativeLayout>
